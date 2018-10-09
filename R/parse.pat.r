@@ -4,7 +4,7 @@ parse.pat <- function(play) {
     # pat_regex1 = paste0("(?<kicker>", name.pattern, ")",
     #     " (extra point|KICK|PAT)",
     #     "( (?<made>GOOD|MADE)| (?<missed>MISSED|NO GOOD|BLOCKED))")
-    pat_regex = paste0("(TD|touchdown)[^[:alnum:]]* \\(?(?<kicker>", name.pattern, ")",
+    pat_regex = paste0("(TD|touchdown)?[^[:alnum:]]* \\(?(?<kicker>", name.pattern, ")",
         " (extra point|KICK|PAT)",
         "( (?<made>GOOD|MADE)| (?<missed>MISSED|NO GOOD|BLOCKED))?\\)?")
 

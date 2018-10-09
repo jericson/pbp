@@ -27,7 +27,7 @@ ExtractPlays <- function(url) {
                             "(?<togo>\\d{1,2}|goal|Goal|GOAL) at (?<field>", team.patterns, ")? ?",
                             "(?<yardline>\\d{1,2})$")
     
-    postplay.regex <- "^\\(((?<OT>OT)|(?<min>\\d{1,2}):(?<sec>\\d\\d)\\s*-\\s*(?<quarter>1st|2nd|3rd|4th|1ST|2ND|3RD|4TH))\\)\\s(?<pbp>.*)\\s*$"
+    postplay.regex <- "^\\(((?<OT>\\d+?OT)|(?<min>\\d{1,2}):(?<sec>\\d\\d)\\s*-\\s*(?<quarter>1st|2nd|3rd|4th|1ST|2ND|3RD|4TH))\\)\\s(?<pbp>.*)\\s*$"
     
     
     
